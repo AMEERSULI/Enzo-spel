@@ -35,7 +35,7 @@ public class Movments : MonoBehaviour
 
 
     [Header("Dashing")]
-    [SerializeField] public float _dashingVelocity = 14f;
+    [SerializeField] public float _dashingVelocity = 24f;
     [SerializeField] public float _dashingTime = 0.5f;
     private Vector2 _dashingDir;
     private bool _isDashing;
