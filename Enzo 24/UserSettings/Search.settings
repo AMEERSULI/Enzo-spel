@@ -16,9 +16,6 @@ scopes = {
 	"last_search.2138236A" = "animationevent"
 	"OpenInspectorPreview.2138236A" = "0"
 	"currentGroup.2138236A" = "asset"
-	"last_search.EAB0C2BA" = "tiles"
-	"OpenInspectorPreview.EAB0C2BA" = "0"
-	"currentGroup.EAB0C2BA" = "all"
 }
 providers = {
 	adb = {
