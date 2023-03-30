@@ -12403,7 +12403,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   _trailRenderer: {fileID: 0}
-  _dashingVelocity: 14
+  _dashingVelocity: 100
   _dashingTime: 0.5
 --- !u!95 &480025736
 Animator:

@@ -8,8 +8,9 @@ public class Movments : MonoBehaviour
     public Animator animator;
     private float horizontal;
     private float vertical;
-    private float speed = 3f;
-    private float jumpingPower = 16f;
+    
+    private float speed = 5f;
+    private float jumpingPower = 19f;
     private bool isFacingRight = true;
 
     private bool isJumping;
@@ -21,7 +22,7 @@ public class Movments : MonoBehaviour
     public bool isDashing;
     public float dashingPower = 24f;
     public float dashingTime = 0.2f;
-    public float dashingCooldown = 1f;
+    public float dashingCooldown = 3f;
     
 
 
@@ -83,8 +84,6 @@ public class Movments : MonoBehaviour
         horizontal = Input.GetAxisRaw("Horizontal") * speed;
         animator.SetFloat("speed", Mathf.Abs(horizontal));
 
-        vertical = Input.GetAxisRaw("Vertical") * speed;
-        animator.SetFloat("speed", Mathf.Abs(vertical));
 
         if (IsGrounded())
         {
@@ -135,7 +134,7 @@ public class Movments : MonoBehaviour
      private void FixedUpdate()
     {
         rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
-
+        
     }
 
     private IEnumerator StopDashing()
