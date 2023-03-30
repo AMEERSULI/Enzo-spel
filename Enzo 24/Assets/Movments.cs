@@ -7,6 +7,7 @@ public class Movments : MonoBehaviour
 {
     public Animator animator;
     private float horizontal;
+    private float vertical;
     private float speed = 3f;
     private float jumpingPower = 16f;
     private bool isFacingRight = true;
@@ -78,8 +79,12 @@ public class Movments : MonoBehaviour
             _canDash = true;
         }
 
+
         horizontal = Input.GetAxisRaw("Horizontal") * speed;
         animator.SetFloat("speed", Mathf.Abs(horizontal));
+
+        vertical = Input.GetAxisRaw("Vertical") * speed;
+        animator.SetFloat("speed", Mathf.Abs(vertical));
 
         if (IsGrounded())
         {
