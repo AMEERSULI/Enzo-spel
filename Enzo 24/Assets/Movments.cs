@@ -9,7 +9,7 @@ public class Movments : MonoBehaviour
     private float horizontal;
     private float vertical;
     
-    private float speed = 5f;
+    private float speed = 4f;
     private float jumpingPower = 19f;
     private bool isFacingRight = true;
 
@@ -20,7 +20,7 @@ public class Movments : MonoBehaviour
 
     public bool canDash = true;
     public bool isDashing;
-    public float dashingPower = 24f;
+    public float dashingPower = 10f;
     public float dashingTime = 0.2f;
     public float dashingCooldown = 3f;
     
@@ -37,7 +37,7 @@ public class Movments : MonoBehaviour
 
 
     [Header("Dashing")]
-    [SerializeField] public float _dashingVelocity = 14f;
+    [SerializeField] public float _dashingVelocity = 10f;
     [SerializeField] public float _dashingTime = 0.5f;
     private Vector2 _dashingDir;
     private bool _isDashing;
